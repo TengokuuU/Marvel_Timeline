@@ -9,4 +9,5 @@ export interface MCUItem {
   poster_url: string;
   link_disney_plus: string;
   scena_ikoniczna_url: string;
+  watched?: boolean;
 }

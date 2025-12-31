@@ -1,179 +1,291 @@
-/* --- Zmienne --- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+  font-family: "work sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  border: none; /* DODANE: usuwa białe linie */
+  outline: none; /* DODANE: usuwa białe linie */
+}
+
+/* DODANE: usuwa wszelkie potencjalne marginesy i bordery */
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 :root {
   --marvel-red: #e62429;
-  --timeline-color: #555;
-  --card-bg: rgba(20, 20, 20, 0.95); /* Ciemne, półprzezroczyste tło detali */
+  --timeline-color: #444;
+  --card-bg: rgba(20, 20, 20, 0.9);
   --text-color: #f0f0f0;
 }
 
-/* --- Główny kontener --- */
 .timeline-wrapper {
-  width: 100%;
+  position: fixed; /* ZMIENIONE z relative na fixed */
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
-  overflow-x: auto;
+  overflow-x: auto; 
   overflow-y: hidden;
-  /* Tymczasowe tło z Twojego obrazka */
-  background-image: url('https://wallpapers.com/images/hd/avengers-endgame-4k-desktop-background-f3g7421337208776.jpg');
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
-  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('/assets/misc/background_main.jpg') no-repeat center center;
+  background-size: cover;
+  scroll-behavior: auto !important;
 }
 
-/* --- Szyna i Linie --- */
+.timeline-wrapper::-webkit-scrollbar {
+  height: 8px; /* DODANE: mały scrollbar */
+}
+.timeline-wrapper::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+.timeline-wrapper::-webkit-scrollbar-thumb {
+  background: var(--marvel-red);
+  border-radius: 10px;
+}
+
+/* OŚ CZASU */
+.timeline-axis {
+  position: absolute;
+  top: 50%;
+  left: 0; /* DODANE: zapewnia że zaczyna się od lewej */
+  width: 100%;
+  height: 4px;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none; /* DODANE: nie blokuje kliknięć */
+}
+
+.main-line { 
+  width: 100%; 
+  height: 100%; 
+  background: rgb(201,201,201); 
+}
+
+.progress-line { 
+  height: 100%; 
+  background: var(--marvel-red); 
+  box-shadow: 0 0 15px var(--marvel-red); 
+  transition: width 0.5s; 
+}
+
+/* TOR I ELEMENTY */
 .timeline-track {
   display: flex;
-  padding: 0 150px;
-  position: relative;
+  height: 100%;
+  padding: 0 15vw;
+  z-index: 2;
   align-items: center;
+  position: relative; /* KLUCZOWE: oś będzie się rozciągać względem tego kontenera */
 }
 
-.track-line {
-  position: absolute;
-  width: 100%;
-  height: 8px;
-  background: var(--timeline-color);
-  z-index: 0;
-  border-radius: 4px;
-}
-
-.progress-bar {
-  position: absolute;
-  left: 0;
-  height: 8px;
-  background: var(--marvel-red);
-  z-index: 1;
-  border-radius: 4px;
-  box-shadow: 0 0 10px var(--marvel-red);
-}
-
-/* --- Element Osi Czasu (Kropka + Karta) --- */
 .timeline-item {
   position: relative;
-  margin: 0 60px;
+  min-width: 380px;
+  height: 100%;
   display: flex;
-  flex-direction: column-reverse; /* Karta nad kropką */
+  justify-content: center;
   align-items: center;
-  z-index: 2;
-}
-
-.timeline-item.bottom {
-  flex-direction: column; /* Karta pod kropką */
+  flex-shrink: 0; /* DODANE: zapobiega kompresji elementów */
 }
 
 .timeline-dot {
-  width: 30px;
-  height: 30px;
-  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: rgb(201, 201, 201);
   border: 3px solid var(--marvel-red);
   border-radius: 50%;
-  z-index: 3;
-  box-shadow: 0 0 15px rgba(0,0,0,0.8);
+  z-index: 100;
+  box-shadow: 0 0 10px var(--marvel-red);
 }
 
-.connector-line {
-    height: 60px; /* Długość linii łączącej */
-    width: 3px;
-    background: var(--timeline-color);
-    margin: 5px 0; /* Odstęp od kropki i karty */
-}
-
-/* --- Karta Filmu (Kontener główny) --- */
-.mcu-card {
+/* KOTWICA I KARTA */
+.card-anchor {
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: 25px;
   display: flex;
-  align-items: flex-start;
-  /* To jest kluczowe dla animacji hovera */
-  transition: transform 0.3s ease;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Powiększenie całej karty po najechaniu */
-.mcu-card:hover {
-    transform: scale(1.05);
-    z-index: 10; /* Żeby najechana karta była zawsze na wierzchu */
+.timeline-item.bottom .card-anchor {
+  bottom: auto;
+  top: 50%;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
-/* --- Plakat --- */
+.mcu-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(15, 15, 15, 0.9);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  width: 220px;
+  height: 330px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+}
+
+/* PLAKAT */
 .poster-wrapper {
-    position: relative;
-    width: 180px;
-    aspect-ratio: 2 / 3; /* Standardowe proporcje plakatu */
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    border: 2px solid transparent;
-    transition: border-color 0.3s ease;
+  width: 220px;
+  height: 330px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
 }
 
-.mcu-card:hover .poster-wrapper {
-    border-color: var(--marvel-red); /* Czerwona ramka na hover */
+.poster-img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; /* DODANE: usuwa ewentualne białe linie pod obrazem */
 }
 
-.poster-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* --- Nakładka "Obejrzane" --- */
-.watched-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Przyciemnienie plakatu */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--marvel-red);
-    font-size: 80px;
-    font-weight: bold;
-    text-shadow: 0 0 20px black;
-}
-
-/* --- Detale (Ukryte domyślnie) --- */
+/* DETALE */
 .details-box {
-    width: 300px;
-    background: var(--card-bg);
-    padding: 25px;
-    border-radius: 12px;
-    margin-left: 20px; /* Odstęp od plakatu */
-    color: var(--text-color);
-    backdrop-filter: blur(10px); /* Efekt "szkła" */
-    border: 1px solid rgba(255,255,255,0.1);
-    
-    /* Stany początkowe do animacji */
-    opacity: 0;
-    transform: translateX(-30px); /* Przesunięte w lewo, schowane za plakat */
-    pointer-events: none; /* Żeby nie reagowało na myszkę jak jest ukryte */
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Płynna animacja */
+  width: 320px;
+  padding: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.4s ease;
+  max-width: 0;
 }
 
-/* POKAZYWANIE DETALI NA HOVER */
-.mcu-card:hover .details-box {
-    opacity: 1;
-    transform: translateX(0); /* Wjazd na swoje miejsce */
-    pointer-events: auto;
-}
-
-/* Typografia w detalach */
 .details-box h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  color: #e62429;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
-.description {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: #ccc;
-    margin-bottom: 20px;
+.details-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+  margin: 0 0 15px 0; /* DODANE: odstęp przed linkiem Disney+ */
+}
+
+/* INTERAKCJA HOVER */
+.mcu-card:hover {
+  width: 540px;
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 20px 50px rgba(230, 36, 41, 0.3);
+}
+
+.timeline-item.bottom .mcu-card:hover {
+  transform: scale(1.05) translateY(10px);
+}
+
+.mcu-card:hover .details-box {
+  opacity: 1;
+  max-width: 320px;
+  padding: 25px;
+}
+
+.card-anchor::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  background: linear-gradient(to bottom, var(--marvel-red), transparent);
+  z-index: 1;
+}
+
+.timeline-item.bottom .card-anchor::after {
+  bottom: auto;
+  top: -25px;
+  background: linear-gradient(to top, var(--marvel-red), transparent);
+}
+
+/* NAKŁADKA OBEJRZANE */
+.watched-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e62429;
+  font-size: 60px;
+  text-shadow: 0 0 20px #000;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* DISNEY+ LOGO */
+.dplus-link {
+  display: inline-block;
 }
 
 .dplus-link img {
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
-    transition: filter 0.3s;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+  transition: filter 0.3s;
+  display: block; /* DODANE: usuwa białe linie pod obrazem */
 }
 
 .dplus-link:hover img {
-     filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.sadge
+{
+  color: rgb(241,241,241);
+  font-size: 14px;
 }

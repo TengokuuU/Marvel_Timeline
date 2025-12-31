@@ -8,8 +8,9 @@
     "data_premiery": "2011-07-22",
     "opis_krotki": "Steve Rogers staje się Kapitanem Ameryką i stawia czoła Red Skull.",
     "poster_url": "assets/posters/cap_1.jpg",
-    "link_disney_plus": "link_do_dplus_cap1",
-    "scena_ikoniczna_url": "assets/scenes/cap_1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8e68c43a-117c-4f4d-b217-0db106a1a614",
+    "scena_ikoniczna_url": "assets/scenes/cap_1_scene.jpg",
+    "watched": false
   },
   {
     "id": 2,
@@ -20,8 +21,9 @@
     "data_premiery": "2013-09-03",
     "opis_krotki": "Dalsze losy Agent Carter po wojnie.",
     "poster_url": "assets/posters/carter_short.jpg",
-    "link_disney_plus": "link_do_dplus_carter_short",
-    "scena_ikoniczna_url": "assets/scenes/carter_short_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-e4cbebda-a890-4e99-9a29-40d2162f7d46",
+    "scena_ikoniczna_url": "assets/scenes/carter_short_scene.jpg",
+    "watched": false
   },
   {
     "id": 3,
@@ -32,8 +34,9 @@
     "data_premiery": "2019-03-08",
     "opis_krotki": "Carol Danvers zostaje Captain Marvel i poznaje młodego Nicka Fury'ego.",
     "poster_url": "assets/posters/cap_marvel.jpg",
-    "link_disney_plus": "link_do_dplus_capmarvel",
-    "scena_ikoniczna_url": "assets/scenes/cap_marvel_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-1e383a14-1ea6-4345-9ab8-fd37618669af",
+    "scena_ikoniczna_url": "assets/scenes/cap_marvel_scene.jpg",
+    "watched": false
   },
   {
     "id": 4,
@@ -44,8 +47,9 @@
     "data_premiery": "2008-05-02",
     "opis_krotki": "Tony Stark, porwany geniusz, buduje pierwszą zbroję Iron Mana.",
     "poster_url": "assets/posters/iron_man.jpg",
-    "link_disney_plus": "link_do_dplus_ironman1",
-    "scena_ikoniczna_url": "assets/scenes/iron_man_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-0c520152-b81f-4c20-9310-003debd1947e",
+    "scena_ikoniczna_url": "assets/scenes/iron_man_scene.jpg",
+    "watched": false
   },
   {
     "id": 5,
@@ -56,8 +60,9 @@
     "data_premiery": "2010-05-07",
     "opis_krotki": "Tony zmaga się z chorobą, nowym wrogiem Whiplash i rządem.",
     "poster_url": "assets/posters/iron_man_2.jpg",
-    "link_disney_plus": "link_do_dplus_ironman2",
-    "scena_ikoniczna_url": "assets/scenes/iron_man_2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-85c5529d-c053-4fa4-9957-4906eb5aedc6",
+    "scena_ikoniczna_url": "assets/scenes/iron_man_2_scene.jpg",
+    "watched": false
   },
   {
     "id": 6,
@@ -68,8 +73,9 @@
     "data_premiery": "2008-06-13",
     "opis_krotki": "Bruce Banner ukrywa się i szuka lekarstwa na swoją kondycję Hulka.",
     "poster_url": "assets/posters/hulk.jpg",
-    "link_disney_plus": "link_do_dplus_hulk",
-    "scena_ikoniczna_url": "assets/scenes/hulk_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-30d00f7b-331a-4f43-b9e1-1989d39cb1a3",
+    "scena_ikoniczna_url": "assets/scenes/hulk_scene.jpg",
+    "watched": false
   },
   {
     "id": 7,
@@ -80,8 +86,9 @@
     "data_premiery": "2011-10-25",
     "opis_krotki": "Agent Coulson w drodze do Nowego Meksyku.",
     "poster_url": "assets/posters/thor_hammer.jpg",
-    "link_disney_plus": "link_do_dplus_thor_hammer",
-    "scena_ikoniczna_url": "assets/scenes/thor_hammer_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b45838e2-aa7a-4985-923d-9fe949e40ece",
+    "scena_ikoniczna_url": "assets/scenes/thor_hammer_scene.jpg",
+    "watched": false
   },
   {
     "id": 8,
@@ -92,8 +99,9 @@
     "data_premiery": "2011-05-06",
     "opis_krotki": "Wygnany Thor ląduje na Ziemi i uczy się pokory.",
     "poster_url": "assets/posters/thor.jpg",
-    "link_disney_plus": "link_do_dplus_thor1",
-    "scena_ikoniczna_url": "assets/scenes/thor_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-479d41e3-8438-4ba4-b93d-8223220e069c",
+    "scena_ikoniczna_url": "assets/scenes/thor_scene.jpg",
+    "watched": false
   },
   {
     "id": 9,
@@ -104,8 +112,9 @@
     "data_premiery": "2011-09-13",
     "opis_krotki": "Próby zapobieżenia uwolnieniu Abomination.",
     "poster_url": "assets/posters/consultant.jpg",
-    "link_disney_plus": "link_do_dplus_consultant",
-    "scena_ikoniczna_url": "assets/scenes/consultant_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-cad91b86-ab50-4fce-882f-ae71c86c2938",
+    "scena_ikoniczna_url": "assets/scenes/consultant_scene.jpg",
+    "watched": false
   },
   {
     "id": 10,
@@ -116,8 +125,9 @@
     "data_premiery": "2012-05-04",
     "opis_krotki": "Pierwsze zgromadzenie najpotężniejszych bohaterów Ziemi przeciwko Lokiemu.",
     "poster_url": "assets/posters/avengers.jpg",
-    "link_disney_plus": "link_do_dplus_avengers1",
-    "scena_ikoniczna_url": "assets/scenes/avengers_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3a5596d6-5133-4a8e-8d21-00e1531a4e0f",
+    "scena_ikoniczna_url": "assets/scenes/avengers_scene.jpg",
+    "watched": false
   },
   {
     "id": 11,
@@ -128,8 +138,9 @@
     "data_premiery": "2012-09-25",
     "opis_krotki": "Para używa broni Chitauri znalezionej po bitwie o Nowy Jork.",
     "poster_url": "assets/posters/item_47.jpg",
-    "link_disney_plus": "link_do_dplus_item47",
-    "scena_ikoniczna_url": "assets/scenes/item47_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/en-kr/browse/entity-2cd46937-17fe-4ada-8de4-0972f2763f1c",
+    "scena_ikoniczna_url": "assets/scenes/item47_scene.jpg",
+    "watched": false
   },
   {
     "id": 12,
@@ -140,8 +151,9 @@
     "data_premiery": "2013-11-08",
     "opis_krotki": "Thor walczy z Mrocznymi Elfami o Aether.",
     "poster_url": "assets/posters/thor_2.jpg",
-    "link_disney_plus": "link_do_dplus_thor2",
-    "scena_ikoniczna_url": "assets/scenes/thor_2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-7c4f4e28-4152-4f64-90ec-8b7f682c33d4",
+    "scena_ikoniczna_url": "assets/scenes/thor_2_scene.jpg",
+    "watched": false
   },
   {
     "id": 13,
@@ -152,8 +164,9 @@
     "data_premiery": "2013-05-03",
     "opis_krotki": "Tony zmaga się z PTSD i terrorystą Mandarinem.",
     "poster_url": "assets/posters/iron_man_3.jpg",
-    "link_disney_plus": "link_do_dplus_ironman3",
-    "scena_ikoniczna_url": "assets/scenes/iron_man_3_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-e8569c2d-85ec-42a4-8811-b2618d494a40",
+    "scena_ikoniczna_url": "assets/scenes/iron_man_3_scene.jpg",
+    "watched": false
   },
   {
     "id": 14,
@@ -164,8 +177,9 @@
     "data_premiery": "2014-02-04",
     "opis_krotki": "Trevor Slattery w więzieniu.",
     "poster_url": "assets/posters/all_hail.jpg",
-    "link_disney_plus": "link_do_dplus_allhail",
-    "scena_ikoniczna_url": "assets/scenes/all_hail_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-14988369-345c-4984-9c16-59428bd70609",
+    "scena_ikoniczna_url": "assets/scenes/all_hail_scene.jpg",
+    "watched": false
   },
   {
     "id": 15,
@@ -176,8 +190,9 @@
     "data_premiery": "2014-04-04",
     "opis_krotki": "Steve odkrywa, że Hydra zinfiltrowała S.H.I.E.L.D.",
     "poster_url": "assets/posters/cap_2.jpg",
-    "link_disney_plus": "link_do_dplus_cap2",
-    "scena_ikoniczna_url": "assets/scenes/cap_2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-ef333a5c-b855-4d3e-a7d9-d9e142b6dc7d",
+    "scena_ikoniczna_url": "assets/scenes/cap_2_scene.jpg",
+    "watched": false
   },
   {
     "id": 16,
@@ -188,8 +203,9 @@
     "data_premiery": "2014-08-01",
     "opis_krotki": "Star-Lord i jego ekipa muszą powstrzymać Ronana przed zniszczeniem galaktyki.",
     "poster_url": "assets/posters/gotg_1.jpg",
-    "link_disney_plus": "link_do_dplus_gotg1",
-    "scena_ikoniczna_url": "assets/scenes/gotg_1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-c9ee959b-7249-4a4c-9708-9ffd1ddb00f1",
+    "scena_ikoniczna_url": "assets/scenes/gotg_1_scene.jpg",
+    "watched": false
   },
   {
     "id": 17,
@@ -200,8 +216,9 @@
     "data_premiery": "2022-08-10",
     "opis_krotki": "Przygotowania Baby Groota do kąpieli.",
     "poster_url": "assets/posters/groot_s1e1.jpg",
-    "link_disney_plus": "link_do_dplus_groot_s1e1",
-    "scena_ikoniczna_url": "assets/scenes/groot_s1e1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-38f451b9-22df-4784-b580-4e4db4b92dba",
+    "scena_ikoniczna_url": "assets/scenes/groot_s1e1_scene.jpg",
+    "watched": false
   },
   {
     "id": 18,
@@ -212,8 +229,9 @@
     "data_premiery": "2017-05-05",
     "opis_krotki": "Strażnicy poznają ojca Star-Lorda, Ego.",
     "poster_url": "assets/posters/gotg_2.jpg",
-    "link_disney_plus": "link_do_dplus_gotg2",
-    "scena_ikoniczna_url": "assets/scenes/gotg_2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-9fcd7087-c151-49dc-aeb9-b2f9943fd4e6",
+    "scena_ikoniczna_url": "assets/scenes/gotg_2_scene.jpg",
+    "watched": false
   },
   {
     "id": 19,
@@ -224,8 +242,9 @@
     "data_premiery": "2022-08-10",
     "opis_krotki": "Więcej przygód Baby Groota na tle kosmosu.",
     "poster_url": "assets/posters/groot_s2.jpg",
-    "link_disney_plus": "link_do_dplus_groot_s2",
-    "scena_ikoniczna_url": "assets/scenes/groot_s2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-38f451b9-22df-4784-b580-4e4db4b92dba",
+    "scena_ikoniczna_url": "assets/scenes/groot_s2_scene.jpg",
+    "watched": false
   },
   {
     "id": 20,
@@ -236,8 +255,9 @@
     "data_premiery": "2015-05-01",
     "opis_krotki": "Avengers walczą z Ultronem, sztuczną inteligencją stworzoną przez Tony'ego.",
     "poster_url": "assets/posters/avengers_2.jpg",
-    "link_disney_plus": "link_do_dplus_avengers2",
-    "scena_ikoniczna_url": "assets/scenes/avengers_2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-39740da6-d484-471b-8dd7-a70c6151d705",
+    "scena_ikoniczna_url": "assets/scenes/avengers_2_scene.jpg",
+    "watched": false
   },
   {
     "id": 21,
@@ -248,8 +268,9 @@
     "data_premiery": "2015-07-17",
     "opis_krotki": "Scott Lang zostaje Ant-Manem pod okiem Hanka Pyma.",
     "poster_url": "assets/posters/ant_man_1.jpg",
-    "link_disney_plus": "link_do_dplus_antman1",
-    "scena_ikoniczna_url": "assets/scenes/ant_man_1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-af42798c-b9db-457f-b748-5e1f029c1ece",
+    "scena_ikoniczna_url": "assets/scenes/ant_man_1_scene.jpg",
+    "watched": false
   },
   {
     "id": 22,
@@ -260,8 +281,9 @@
     "data_premiery": "2016-05-06",
     "opis_krotki": "Avengers dzielą się na dwa obozy po Aktach Sokovii.",
     "poster_url": "assets/posters/cap_3.jpg",
-    "link_disney_plus": "link_do_dplus_cap3",
-    "scena_ikoniczna_url": "assets/scenes/cap_3_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-2fe7e94e-8b24-4a75-8fc8-969c2a16959e",
+    "scena_ikoniczna_url": "assets/scenes/cap_3_scene.jpg",
+    "watched": false
   },
   {
     "id": 23,
@@ -272,8 +294,9 @@
     "data_premiery": "2021-07-09",
     "opis_krotki": "Natasha Romanoff stawia czoła swojej mrocznej przeszłości.",
     "poster_url": "assets/posters/black_widow.jpg",
-    "link_disney_plus": "link_do_dplus_blackwidow",
-    "scena_ikoniczna_url": "assets/scenes/black_widow_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-d9cd6bd1-bcf8-4a3b-8f92-0fdd4f79ac08",
+    "scena_ikoniczna_url": "assets/scenes/black_widow_scene.jpg",
+    "watched": false
   },
   {
     "id": 24,
@@ -284,8 +307,9 @@
     "data_premiery": "2018-02-16",
     "opis_krotki": "T'Challa powraca do Wakandy, by objąć tron, ale zagraża mu Killmonger.",
     "poster_url": "assets/posters/bp_1.jpg",
-    "link_disney_plus": "link_do_dplus_bp1",
-    "scena_ikoniczna_url": "assets/scenes/bp_1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8904b1b5-da2c-4ff1-b389-dc81825559fd",
+    "scena_ikoniczna_url": "assets/scenes/bp_1_scene.jpg",
+    "watched": false
   },
   {
     "id": 25,
@@ -296,8 +320,9 @@
     "data_premiery": "2017-07-07",
     "opis_krotki": "Peter Parker, Spider-Man, musi pogodzić szkołę z życiem superbohatera.",
     "poster_url": "assets/posters/sm_homecoming.jpg",
-    "link_disney_plus": "link_do_dplus_smh",
-    "scena_ikoniczna_url": "assets/scenes/smh_scene.jpg"
+    "link_disney_plus": "https://www.netflix.com/watch/80166369?source=35",
+    "scena_ikoniczna_url": "assets/scenes/smh_scene.jpg",
+    "watched": false
   },
   {
     "id": 26,
@@ -308,8 +333,9 @@
     "data_premiery": "2016-11-04",
     "opis_krotki": "Chirurg Stephen Strange odkrywa mistyczne sztuki po wypadku.",
     "poster_url": "assets/posters/ds_1.jpg",
-    "link_disney_plus": "link_do_dplus_ds1",
-    "scena_ikoniczna_url": "assets/scenes/ds_1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-43a741e8-2369-4577-9bec-ef94f4aaae0b",
+    "scena_ikoniczna_url": "assets/scenes/ds_1_scene.jpg",
+    "watched": false
   },
   {
     "id": 27,
@@ -320,8 +346,9 @@
     "data_premiery": "2017-11-03",
     "opis_krotki": "Thor musi powstrzymać Ragnarok i swoją siostrę, Helę.",
     "poster_url": "assets/posters/thor_3.jpg",
-    "link_disney_plus": "link_do_dplus_thor3",
-    "scena_ikoniczna_url": "assets/scenes/thor_3_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-766280de-0c00-4781-a388-2c85c5b4e259",
+    "scena_ikoniczna_url": "assets/scenes/thor_3_scene.jpg",
+    "watched": false
   },
   {
     "id": 28,
@@ -332,8 +359,9 @@
     "data_premiery": "2018-07-06",
     "opis_krotki": "Scott Lang pomaga Hankowi Pymowi odzyskać Janet van Dyne z Wymiaru Kwantowego.",
     "poster_url": "assets/posters/ant_man_2.jpg",
-    "link_disney_plus": "link_do_dplus_antman2",
-    "scena_ikoniczna_url": "assets/scenes/ant_man_2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3533ca7b-e187-4bf5-a65c-7c903cd2d4ad",
+    "scena_ikoniczna_url": "assets/scenes/ant_man_2_scene.jpg",
+    "watched": false
   },
   {
     "id": 29,
@@ -344,8 +372,9 @@
     "data_premiery": "2018-04-27",
     "opis_krotki": "Thanos rozpoczyna poszukiwania Kamieni Nieskończoności.",
     "poster_url": "assets/posters/infinity_war.jpg",
-    "link_disney_plus": "link_do_dplus_iw",
-    "scena_ikoniczna_url": "assets/scenes/iw_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225",
+    "scena_ikoniczna_url": "assets/scenes/iw_scene.jpg",
+    "watched": false
   },
   {
     "id": 30,
@@ -356,8 +385,9 @@
     "data_premiery": "2019-04-26",
     "opis_krotki": "Pozostali Avengers opracowują plan cofnięcia pstryknięcia Thanosa.",
     "poster_url": "assets/posters/endgame.jpg",
-    "link_disney_plus": "link_do_dplus_endgame",
-    "scena_ikoniczna_url": "assets/scenes/endgame_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b39aa962-be56-4b09-a536-98617031717f",
+    "scena_ikoniczna_url": "assets/scenes/endgame_scene.jpg",
+    "watched": false
   },
 
 
@@ -370,8 +400,9 @@
     "data_premiery": "2021-06-09",
     "opis_krotki": "Alternatywny Loki zostaje schwytany przez TVA i odkrywa chaos Multiwersum.",
     "poster_url": "assets/posters/loki_s1.jpg",
-    "link_disney_plus": "link_do_dplus_loki1",
-    "scena_ikoniczna_url": "assets/scenes/loki_s1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8f8c5cbb-e5ba-4285-9e2c-86abcac9fd50",
+    "scena_ikoniczna_url": "assets/scenes/loki_s1_scene.jpg",
+    "watched": false
   },
   {
     "id": 32,
@@ -382,8 +413,9 @@
     "data_premiery": "2021-08-11",
     "opis_krotki": "Obserwator pokazuje alternatywne wersje kluczowych momentów MCU.",
     "poster_url": "assets/posters/whatif_s1.jpg",
-    "link_disney_plus": "link_do_dplus_whatif1",
-    "scena_ikoniczna_url": "assets/scenes/whatif_s1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
+    "scena_ikoniczna_url": "assets/scenes/whatif_s1_scene.jpg",
+    "watched": false
   },
   {
     "id": 33,
@@ -394,8 +426,9 @@
     "data_premiery": "2021-01-15",
     "opis_krotki": "Wanda tworzy iluzoryczne życie w Westview, mierząc się z traumą.",
     "poster_url": "assets/posters/wandavision.jpg",
-    "link_disney_plus": "link_do_dplus_wandavision",
-    "scena_ikoniczna_url": "assets/scenes/wandavision_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-90affd1f-0851-48bc-9cab-c142d5c9c20c",
+    "scena_ikoniczna_url": "assets/scenes/wandavision_scene.jpg",
+    "watched": false
   },
   {
     "id": 34,
@@ -406,8 +439,9 @@
     "data_premiery": "2021-09-03",
     "opis_krotki": "Shang-Chi musi zmierzyć się ze swoim ojcem i przeszłością organizacji Ten Rings.",
     "poster_url": "assets/posters/shangchi.jpg",
-    "link_disney_plus": "link_do_dplus_shangchi",
-    "scena_ikoniczna_url": "assets/scenes/shangchi_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-92243dd0-bcfe-4365-ae76-1fa3cf1a2ab9",
+    "scena_ikoniczna_url": "assets/scenes/shangchi_scene.jpg",
+    "watched": false
   },
   {
     "id": 35,
@@ -418,8 +452,9 @@
     "data_premiery": "2021-03-19",
     "opis_krotki": "Sam Wilson i Bucky Barnes walczą o spuściznę Kapitana Ameryki.",
     "poster_url": "assets/posters/fatws.jpg",
-    "link_disney_plus": "link_do_dplus_fatws",
-    "scena_ikoniczna_url": "assets/scenes/fatws_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3c08a31a-2350-4aaf-90d0-88def4c551bf",
+    "scena_ikoniczna_url": "assets/scenes/fatws_scene.jpg",
+    "watched": false
   },
   {
     "id": 36,
@@ -431,7 +466,8 @@
     "opis_krotki": "Peter Parker przygotowuje się do wycieczki do Europy.",
     "poster_url": "assets/posters/peters_todo.jpg",
     "link_disney_plus": "link_do_dplus_peterstodo",
-    "scena_ikoniczna_url": "assets/scenes/peters_todo_scene.jpg"
+    "scena_ikoniczna_url": "assets/scenes/peters_todo_scene.jpg",
+    "watched": false
   },
   {
     "id": 37,
@@ -442,8 +478,9 @@
     "data_premiery": "2019-07-02",
     "opis_krotki": "Peter podczas szkolnej wycieczki w Europie musi walczyć z Mysterio.",
     "poster_url": "assets/posters/sm_farfromhome.jpg",
-    "link_disney_plus": "link_do_dplus_smffh",
-    "scena_ikoniczna_url": "assets/scenes/smffh_scene.jpg"
+    "link_disney_plus": "https://www.netflix.com/watch/81055822?source=35",
+    "scena_ikoniczna_url": "assets/scenes/smffh_scene.jpg",
+    "watched": false
   },
   {
     "id": 38,
@@ -454,8 +491,9 @@
     "data_premiery": "2021-11-05",
     "opis_krotki": "Nieśmiertelni bohaterowie muszą powstrzymać Emergence i Deviantów.",
     "poster_url": "assets/posters/eternals.jpg",
-    "link_disney_plus": "link_do_dplus_eternals",
-    "scena_ikoniczna_url": "assets/scenes/eternals_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b042efa2-6650-48fd-bf35-ea285a5a5649",
+    "scena_ikoniczna_url": "assets/scenes/eternals_scene.jpg",
+    "watched": false
   },
   {
     "id": 39,
@@ -466,8 +504,9 @@
     "data_premiery": "2021-12-17",
     "opis_krotki": "Peter prosi Strange'a o magiczną pomoc, co prowadzi do otwarcia Multiwersum.",
     "poster_url": "assets/posters/sm_nowayhome.jpg",
-    "link_disney_plus": "link_do_dplus_smnwh",
-    "scena_ikoniczna_url": "assets/scenes/smnwh_scene.jpg"
+    "link_disney_plus": "https://www.primevideo.com/dp/amzn1.dv.gti.53065791-4335-46ce-bc1b-5c5ebbb21073?autoplay=0&ref_=atv_cf_strg_wb",
+    "scena_ikoniczna_url": "assets/scenes/smnwh_scene.jpg",
+    "watched": false
   },
   {
     "id": 40,
@@ -478,8 +517,9 @@
     "data_premiery": "2022-05-06",
     "opis_krotki": "Strange podróżuje przez Multiwersum, by chronić Amerykę Chavez.",
     "poster_url": "assets/posters/ds_2.jpg",
-    "link_disney_plus": "link_do_dplus_ds2",
-    "scena_ikoniczna_url": "assets/scenes/ds_2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-2f51b691-b22a-42be-9c19-6bbabd2563e4",
+    "scena_ikoniczna_url": "assets/scenes/ds_2_scene.jpg",
+    "watched": false
   },
   {
     "id": 41,
@@ -490,8 +530,9 @@
     "data_premiery": "2021-11-24",
     "opis_krotki": "Clint Barton współpracuje z młodą Kate Bishop w okresie świątecznym.",
     "poster_url": "assets/posters/hawkeye_s1.jpg",
-    "link_disney_plus": "link_do_dplus_hawkeye",
-    "scena_ikoniczna_url": "assets/scenes/hawkeye_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-128482e8-a9bc-4289-9c0d-83a975d823f3",
+    "scena_ikoniczna_url": "assets/scenes/hawkeye_scene.jpg",
+    "watched": false
   },
   {
     "id": 42,
@@ -502,8 +543,9 @@
     "data_premiery": "2022-03-30",
     "opis_krotki": "Mark Spector zmaga się z wieloma osobowościami i egipskimi bogami.",
     "poster_url": "assets/posters/moonknight.jpg",
-    "link_disney_plus": "link_do_dplus_moonknight",
-    "scena_ikoniczna_url": "assets/scenes/moonknight_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-330062c7-20c5-45e1-b6c5-e1e096055d75",
+    "scena_ikoniczna_url": "assets/scenes/moonknight_scene.jpg",
+    "watched": false
   },
   {
     "id": 43,
@@ -514,8 +556,9 @@
     "data_premiery": "2022-11-11",
     "opis_krotki": "Wakanda musi zmierzyć się ze światową inwazją i nowym wrogiem, Namorem.",
     "poster_url": "assets/posters/bp_2.jpg",
-    "link_disney_plus": "link_do_dplus_bp2",
-    "scena_ikoniczna_url": "assets/scenes/bp_2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-86e14fdb-3841-4282-ad38-07c8c4aab4b6",
+    "scena_ikoniczna_url": "assets/scenes/bp_2_scene.jpg",
+    "watched": false
   },
   {
     "id": 44,
@@ -526,8 +569,9 @@
     "data_premiery": "2024-01-09",
     "opis_krotki": "Maya Lopez, Echo, powraca do rodzinnego domu, by zmierzyć się z Kingpinem.",
     "poster_url": "assets/posters/echo.jpg",
-    "link_disney_plus": "link_do_dplus_echo",
-    "scena_ikoniczna_url": "assets/scenes/echo_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3c9aa47d-88c2-455b-a63b-4be76b666a55",
+    "scena_ikoniczna_url": "assets/scenes/echo_scene.jpg",
+    "watched": false
   },
   {
     "id": 45,
@@ -538,8 +582,9 @@
     "data_premiery": "2022-08-18",
     "opis_krotki": "Jennifer Walters zostaje She-Hulk i musi zrównoważyć życie prawnika i superbohaterki.",
     "poster_url": "assets/posters/shehulk.jpg",
-    "link_disney_plus": "link_do_dplus_shehulk",
-    "scena_ikoniczna_url": "assets/scenes/shehulk_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b1c3c897-b925-4236-88e4-1ceed3623a46",
+    "scena_ikoniczna_url": "assets/scenes/shehulk_scene.jpg",
+    "watched": false
   },
   {
     "id": 46,
@@ -550,8 +595,9 @@
     "data_premiery": "2022-06-08",
     "opis_krotki": "Kamala Khan, fanka Avengers, zdobywa nadprzyrodzone moce.",
     "poster_url": "assets/posters/msmarvel.jpg",
-    "link_disney_plus": "link_do_dplus_msmarvel",
-    "scena_ikoniczna_url": "assets/scenes/msmarvel_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-7bf8d7e6-9739-4fee-86c0-f4afc48b152c",
+    "scena_ikoniczna_url": "assets/scenes/msmarvel_scene.jpg",
+    "watched": false
   },
   {
     "id": 47,
@@ -562,8 +608,9 @@
     "data_premiery": "2022-07-08",
     "opis_krotki": "Thor łączy siły z Jane Foster (Mighty Thor), by pokonać Gorra, Rzeźnika Bogów.",
     "poster_url": "assets/posters/thor_4.jpg",
-    "link_disney_plus": "link_do_dplus_thor4",
-    "scena_ikoniczna_url": "assets/scenes/thor_4_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-0007d7a0-2515-411e-9294-2de6a7b8d00e",
+    "scena_ikoniczna_url": "assets/scenes/thor_4_scene.jpg",
+    "watched": false
   },
   {
     "id": 48,
@@ -574,8 +621,9 @@
     "data_premiery": "2025-06-24",
     "opis_krotki": "Riri Williams, genialna wynalazczyni, tworzy zaawansowaną zbroję Ironheart.",
     "poster_url": "assets/posters/ironheart.jpg",
-    "link_disney_plus": "link_do_dplus_ironheart",
-    "scena_ikoniczna_url": "assets/scenes/ironheart_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b2b50b9a-a055-4b31-a609-8ec46f3add98",
+    "scena_ikoniczna_url": "assets/scenes/ironheart_scene.jpg",
+    "watched": false
   },
   {
     "id": 49,
@@ -586,8 +634,9 @@
     "data_premiery": "2022-10-07",
     "opis_krotki": "Grupa łowców potworów zbiera się na poszukiwanie potężnego artefaktu.",
     "poster_url": "assets/posters/werewolf.jpg",
-    "link_disney_plus": "link_do_dplus_werewolf",
-    "scena_ikoniczna_url": "assets/scenes/werewolf_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-ad2fd4e8-062b-45b9-b2c5-8b8779873e48",
+    "scena_ikoniczna_url": "assets/scenes/werewolf_scene.jpg",
+    "watched": false
   },
   {
     "id": 50,
@@ -598,8 +647,9 @@
     "data_premiery": "2022-11-25",
     "opis_krotki": "Strażnicy próbują uczynić święta Patera niezapomnianymi.",
     "poster_url": "assets/posters/gotg_holiday.jpg",
-    "link_disney_plus": "link_do_dplus_gotgholiday",
-    "scena_ikoniczna_url": "assets/scenes/gotgholiday_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-1a15fe60-3236-4242-a699-a4e3392cf112",
+    "scena_ikoniczna_url": "assets/scenes/gotgholiday_scene.jpg",
+    "watched": false
   },
   {
     "id": 51,
@@ -610,8 +660,9 @@
     "data_premiery": "2023-02-17",
     "opis_krotki": "Rodzina Langa zostaje wciągnięta do Wymiaru Kwantowego i spotyka Kanga.",
     "poster_url": "assets/posters/quantumania.jpg",
-    "link_disney_plus": "link_do_dplus_quantumania",
-    "scena_ikoniczna_url": "assets/scenes/quantumania_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-eb1453f3-48aa-4af0-85f5-8ca4916c7415",
+    "scena_ikoniczna_url": "assets/scenes/quantumania_scene.jpg",
+    "watched": false
   },
   {
     "id": 52,
@@ -622,8 +673,9 @@
     "data_premiery": "2023-05-05",
     "opis_krotki": "Strażnicy ruszają na misję ratunkową, by ocalić Rocketa.",
     "poster_url": "assets/posters/gotg_3.jpg",
-    "link_disney_plus": "link_do_dplus_gotg3",
-    "scena_ikoniczna_url": "assets/scenes/gotg_3_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-820f0ded-3254-42c5-a7e4-7c044ff6dd65",
+    "scena_ikoniczna_url": "assets/scenes/gotg_3_scene.jpg",
+    "watched": false
   },
   {
     "id": 53,
@@ -634,8 +686,9 @@
     "data_premiery": "2023-06-21",
     "opis_krotki": "Nick Fury powraca na Ziemię, by walczyć z inwazją Skrulli.",
     "poster_url": "assets/posters/secret_invasion.jpg",
-    "link_disney_plus": "link_do_dplus_secretinvasion",
-    "scena_ikoniczna_url": "assets/scenes/secretinvasion_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-4cfe6313-7f5e-4544-af84-d31bf718f65a",
+    "scena_ikoniczna_url": "assets/scenes/secretinvasion_scene.jpg",
+    "watched": false
   },
   {
     "id": 54,
@@ -646,8 +699,9 @@
     "data_premiery": "2023-11-10",
     "opis_krotki": "Carol Danvers, Monica Rambeau i Kamala Khan zamieniają się miejscami po aktywacji mocy.",
     "poster_url": "assets/posters/the_marvels.jpg",
-    "link_disney_plus": "link_do_dplus_marvels",
-    "scena_ikoniczna_url": "assets/scenes/marvels_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-75c90eca-8969-4edb-ac1a-7165cff2671c",
+    "scena_ikoniczna_url": "assets/scenes/marvels_scene.jpg",
+    "watched": false
   },
   {
     "id": 55,
@@ -658,8 +712,9 @@
     "data_premiery": "2023-10-06",
     "opis_krotki": "Loki próbuje ustabilizować Multiwersum i TVA.",
     "poster_url": "assets/posters/loki_s2.jpg",
-    "link_disney_plus": "link_do_dplus_loki2",
-    "scena_ikoniczna_url": "assets/scenes/loki_s2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-8f8c5cbb-e5ba-4285-9e2c-86abcac9fd50",
+    "scena_ikoniczna_url": "assets/scenes/loki_s2_scene.jpg",
+    "watched": false
   },
   {
     "id": 56,
@@ -670,8 +725,9 @@
     "data_premiery": "2023-12-22",
     "opis_krotki": "Obserwator kontynuuje badanie alternatywnych linii czasu.",
     "poster_url": "assets/posters/whatif_s2.jpg",
-    "link_disney_plus": "link_do_dplus_whatif2",
-    "scena_ikoniczna_url": "assets/scenes/whatif_s2_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
+    "scena_ikoniczna_url": "assets/scenes/whatif_s2_scene.jpg",
+    "watched": false
   },
   {
     "id": 57,
@@ -682,8 +738,9 @@
     "data_premiery": "2024-07-26",
     "opis_krotki": "Deadpool i Wolverine łączą siły w Multiwersum, redefiniując MCU.",
     "poster_url": "assets/posters/deadpool_wolverine.jpg",
-    "link_disney_plus": "link_do_dplus_deadpool_wolvie",
-    "scena_ikoniczna_url": "assets/scenes/deadpool_wolvie_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-120ae1e6-2240-4924-a4ce-f8de6e28b0b1",
+    "scena_ikoniczna_url": "assets/scenes/deadpool_wolvie_scene.jpg",
+    "watched": false
   },
   {
     "id": 58,
@@ -694,8 +751,9 @@
     "data_premiery": "2024-09-19",
     "opis_krotki": "Agatha Harkness wraca do życia i wyrusza w tajemniczą podróż.",
     "poster_url": "assets/posters/agatha.jpg",
-    "link_disney_plus": "link_do_dplus_agatha",
-    "scena_ikoniczna_url": "assets/scenes/agatha_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-5e474669-a4a2-4b90-a928-5ae7f845090c",
+    "scena_ikoniczna_url": "assets/scenes/agatha_scene.jpg",
+    "watched": false
   },
   {
     "id": 59,
@@ -706,8 +764,9 @@
     "data_premiery": "2024-12-22",
     "opis_krotki": "Kolejny sezon alternatywnych historii Multiwersum.",
     "poster_url": "assets/posters/whatif_s3.jpg",
-    "link_disney_plus": "link_do_dplus_whatif3",
-    "scena_ikoniczna_url": "assets/scenes/whatif_s3_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-fc588cfe-ff2b-4a44-abbd-d76359ce778f",
+    "scena_ikoniczna_url": "assets/scenes/whatif_s3_scene.jpg",
+    "watched": false
   },
   {
     "id": 60,
@@ -718,8 +777,9 @@
     "data_premiery": "2025-01-22",
     "opis_krotki": "Animowana historia Petera Parkera na początku jego kariery.",
     "poster_url": "assets/posters/spidey_yfn.jpg",
-    "link_disney_plus": "link_do_dplus_spideyyfn",
-    "scena_ikoniczna_url": "assets/scenes/spideyyfn_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-b1417e49-48ad-4827-bfd6-94580ecbecd7",
+    "scena_ikoniczna_url": "assets/scenes/spideyyfn_scene.jpg",
+    "watched": false
   },
   {
     "id": 61,
@@ -730,8 +790,9 @@
     "data_premiery": "2025-03-01",
     "opis_krotki": "Matt Murdock powraca, by walczyć o sprawiedliwość w Nowym Jorku.",
     "poster_url": "assets/posters/daredevil_ba.jpg",
-    "link_disney_plus": "link_do_dplus_daredevilba",
-    "scena_ikoniczna_url": "assets/scenes/daredevilba_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-85e7a914-c8e6-41db-95df-c740dc2cf1b7",
+    "scena_ikoniczna_url": "assets/scenes/daredevilba_scene.jpg",
+    "watched": false
   },
   {
     "id": 62,
@@ -742,8 +803,9 @@
     "data_premiery": "2025-02-14",
     "opis_krotki": "Sam Wilson jako Kapitan Ameryka w nowej erze.",
     "poster_url": "assets/posters/cap_4.jpg",
-    "link_disney_plus": "link_do_dplus_cap4",
-    "scena_ikoniczna_url": "assets/scenes/cap_4_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-3064ac7f-ef4d-4f89-b92f-b5524da92a72",
+    "scena_ikoniczna_url": "assets/scenes/cap_4_scene.jpg",
+    "watched": false
   },
   {
     "id": 63,
@@ -754,8 +816,9 @@
     "data_premiery": "2025-05-02",
     "opis_krotki": "Grupa antybohaterów wykonuje misje dla rządu.",
     "poster_url": "assets/posters/thunderbolts.jpg",
-    "link_disney_plus": "link_do_dplus_thunderbolts",
-    "scena_ikoniczna_url": "assets/scenes/thunderbolts_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-f51dce23-7d8f-490a-9f0c-be1b5432c2a9",
+    "scena_ikoniczna_url": "assets/scenes/thunderbolts_scene.jpg",
+    "watched": false
   },
   {
     "id": 64,
@@ -766,7 +829,8 @@
     "data_premiery": "2025-07-25",
     "opis_krotki": "Wprowadzenie Fantastycznej Czwórki do MCU.",
     "poster_url": "assets/posters/ff_1.jpg",
-    "link_disney_plus": "link_do_dplus_ff1",
-    "scena_ikoniczna_url": "assets/scenes/ff_1_scene.jpg"
+    "link_disney_plus": "https://www.disneyplus.com/pl-pl/browse/entity-2142a7a9-4c49-438d-a492-296c4e08b714",
+    "scena_ikoniczna_url": "assets/scenes/ff_1_scene.jpg",
+    "watched": false
   }
 ]
