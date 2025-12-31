@@ -5,7 +5,7 @@ import { MCUItem } from '../../app/models/mcu-item.model';
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
-  private dataUrl = 'Assets/data/mcu_movies_data.json';
+  private dataUrl = 'assets/data/mcu_movies_data.json';
 
   constructor(private http: HttpClient) {}
 
