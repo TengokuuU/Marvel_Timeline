@@ -13,63 +13,81 @@ import { DataService } from '../core/services/data.service';
 export class App implements OnInit {
   mcuItems: MCUItem[] = [];
 
-  // Łapiemy referencję do kontenera z HTMLa
   @ViewChild('timeline') timeline!: ElementRef;
+  @ViewChild('timelineWrapper') timelineWrapper!: ElementRef;
 
   constructor(private dataService: DataService) {}
 
-ngOnInit() {
-  this.dataService.getTimeline().subscribe({
-    next: (data) => {
-      // 1. Najpierw ładujemy surowe dane z JSON-a
-      this.mcuItems = data;
-
-      // 2. Potem sprawdzamy, co użytkownik już obejrzał
-      this.loadWatchedStatus();
-      
-      console.log('Dane załadowane i zsynchronizowane');
-    },
-    error: (err) => console.error('Błąd ładowania danych:', err)
-  });
-}
-  // Mechanizm przewijania kółkiem myszy
-@HostListener('wheel', ['$event'])
-onWheel(event: WheelEvent) {
-  if (this.timeline) {
-    this.timeline.nativeElement.scrollLeft += event.deltaY * 0.8; 
-    
-    // Blokujemy domyślny skok przeglądarki
-    event.preventDefault();
-  }
-}
-
-toggleWatched(item: any, event: Event) {
-  event.stopPropagation();
-  item.watched = !item.watched;
-  this.saveToLocalStorage();
-}
-
-saveToLocalStorage() {
-  // Wyciągamy tylko ID filmów, które mają watched: true
-  const watchedIds = this.mcuItems
-    .filter(item => item.watched)
-    .map(item => item.id);
-  
-  localStorage.setItem('mcu_watched_list', JSON.stringify(watchedIds));
-}
-
-loadWatchedStatus() {
-  const saved = localStorage.getItem('mcu_watched_list');
-  if (saved) {
-    const watchedIds: number[] = JSON.parse(saved);
-    
-    // Iterujemy po załadowanych przedmiotach i ustawiamy watched na true, 
-    // jeśli ich ID znajduje się w liście zapisanej w przeglądarce
-    this.mcuItems.forEach(item => {
-      if (watchedIds.includes(item.id)) {
-        item.watched = true;
-      }
+  ngOnInit() {
+    this.dataService.getTimeline().subscribe({
+      next: (data) => {
+        this.mcuItems = data;
+        this.loadWatchedStatus();
+        console.log('Dane załadowane i zsynchronizowane');
+      },
+      error: (err) => console.error('Błąd ładowania danych:', err)
     });
   }
-}
+
+  @HostListener('wheel', ['$event'])
+  onWheel(event: WheelEvent) {
+    if (this.timelineWrapper) {
+      this.timelineWrapper.nativeElement.scrollLeft += event.deltaY * 0.8; 
+      event.preventDefault();
+    }
+  }
+
+  toggleWatched(item: any, event: Event) {
+    event.stopPropagation();
+    item.watched = !item.watched;
+    this.saveToLocalStorage();
+  }
+
+  saveToLocalStorage() {
+    const watchedIds = this.mcuItems
+      .filter(item => item.watched)
+      .map(item => item.id);
+    
+    localStorage.setItem('mcu_watched_list', JSON.stringify(watchedIds));
+  }
+
+  loadWatchedStatus() {
+    const saved = localStorage.getItem('mcu_watched_list');
+    if (saved) {
+      const watchedIds: number[] = JSON.parse(saved);
+      this.mcuItems.forEach(item => {
+        if (watchedIds.includes(item.id)) {
+          item.watched = true;
+        }
+      });
+    }
+  }
+
+  defaultBg = 'assets/misc/background_main.jpg'; 
+  private currentLayer: 1 | 2 = 1;
+
+  setHoverBg(item: any | null) {
+    const track = this.timeline?.nativeElement;
+    if (!track) return;
+
+    const newBg = (item && item.scena_ikoniczna_url) 
+      ? item.scena_ikoniczna_url 
+      : this.defaultBg;
+
+    const currentBg = this.currentLayer === 1 
+      ? getComputedStyle(track).getPropertyValue('--bg-layer-1').trim()
+      : getComputedStyle(track).getPropertyValue('--bg-layer-2').trim();
+
+    if (currentBg.includes(newBg)) return;
+
+    if (this.currentLayer === 1) {
+      track.style.setProperty('--bg-layer-2', `url('${newBg}')`);
+      track.classList.add('fade-to-layer-2');
+      this.currentLayer = 2;
+    } else {
+      track.style.setProperty('--bg-layer-1', `url('${newBg}')`);
+      track.classList.remove('fade-to-layer-2');
+      this.currentLayer = 1;
+    }
+  }
 }

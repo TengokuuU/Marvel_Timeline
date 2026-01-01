@@ -15,11 +15,10 @@ html, body {
   padding: 0;
   overflow: hidden;
   background: #000;
-  border: none; /* DODANE: usuwa białe linie */
-  outline: none; /* DODANE: usuwa białe linie */
+  border: none;
+  outline: none;
 }
 
-/* DODANE: usuwa wszelkie potencjalne marginesy i bordery */
 body {
   position: fixed;
   top: 0;
@@ -36,7 +35,7 @@ body {
 }
 
 .timeline-wrapper {
-  position: fixed; /* ZMIENIONE z relative na fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -45,14 +44,12 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-              url('/assets/misc/background_main.jpg') no-repeat center center;
-  background-size: cover;
+  background: #000;
   scroll-behavior: auto !important;
 }
 
 .timeline-wrapper::-webkit-scrollbar {
-  height: 8px; /* DODANE: mały scrollbar */
+  height: 8px;
 }
 .timeline-wrapper::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.3);
@@ -62,16 +59,69 @@ body {
   border-radius: 10px;
 }
 
+/* TOR I ELEMENTY */
+.timeline-track {
+  display: flex;
+  height: 100%;
+  padding: 0 15vw;
+  z-index: 2;
+  align-items: center;
+  position: relative;
+}
+
+/* Warstwa tła 1 (dolna) - PRZENIESIONE NA TIMELINE-TRACK */
+.timeline-track::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              var(--bg-layer-1, url('/assets/misc/background_main.jpg')) no-repeat center center;
+  background-size: cover;
+  z-index: -2;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* Warstwa tła 2 (górna) - PRZENIESIONE NA TIMELINE-TRACK */
+.timeline-track::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              var(--bg-layer-2, url('/assets/misc/background_main.jpg')) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Animacja przełączania warstw */
+.timeline-track.fade-to-layer-2::before {
+  opacity: 0;
+}
+
+.timeline-track.fade-to-layer-2::after {
+  opacity: 1;
+}
+
 /* OŚ CZASU */
 .timeline-axis {
   position: absolute;
   top: 50%;
-  left: 0; /* DODANE: zapewnia że zaczyna się od lewej */
+  left: 0;
   width: 100%;
   height: 4px;
   transform: translateY(-50%);
   z-index: 1;
-  pointer-events: none; /* DODANE: nie blokuje kliknięć */
+  pointer-events: none;
 }
 
 .main-line { 
@@ -87,16 +137,6 @@ body {
   transition: width 0.5s; 
 }
 
-/* TOR I ELEMENTY */
-.timeline-track {
-  display: flex;
-  height: 100%;
-  padding: 0 15vw;
-  z-index: 2;
-  align-items: center;
-  position: relative; /* KLUCZOWE: oś będzie się rozciągać względem tego kontenera */
-}
-
 .timeline-item {
   position: relative;
   min-width: 380px;
@@ -104,7 +144,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* DODANE: zapobiega kompresji elementów */
+  flex-shrink: 0;
 }
 
 .timeline-dot {
@@ -165,7 +205,7 @@ body {
   width: 100%; 
   height: 100%; 
   object-fit: cover; 
-  display: block; /* DODANE: usuwa ewentualne białe linie pod obrazem */
+  display: block;
 }
 
 /* DETALE */
@@ -193,7 +233,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #ddd;
-  margin: 0 0 15px 0; /* DODANE: odstęp przed linkiem Disney+ */
+  margin: 0 0 15px 0;
 }
 
 /* INTERAKCJA HOVER */
@@ -253,7 +293,7 @@ body {
 .dplus-link img {
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
   transition: filter 0.3s;
-  display: block; /* DODANE: usuwa białe linie pod obrazem */
+  display: block;
 }
 
 .dplus-link:hover img {
@@ -272,7 +312,6 @@ body {
   text-align: center;
   padding: 6px 8px;
   border-radius: 4px;
-
   position: absolute;
   bottom: 110%;
   left: 50%;
@@ -284,8 +323,7 @@ body {
   visibility: visible;
 }
 
-.sadge
-{
+.sadge {
   color: rgb(241,241,241);
   font-size: 14px;
 }

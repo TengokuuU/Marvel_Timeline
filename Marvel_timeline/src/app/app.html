@@ -1,5 +1,5 @@
-<div class="timeline-wrapper" #timeline>
-  <div class="timeline-track">
+<div class="timeline-wrapper" #timelineWrapper>
+  <div class="timeline-track" #timeline>
     <!-- OŚ CZASU PRZENIESIONA DO ŚRODKA TRACK -->
     <div class="timeline-axis">
       <div class="main-line"></div>
@@ -12,7 +12,10 @@
       <div class="timeline-dot"></div>
 
       <div class="card-anchor">
-        <div class="mcu-card" (click)="toggleWatched(item, $event)">
+        <div class="mcu-card" 
+             (mouseenter)="setHoverBg(item)" 
+             (mouseleave)="setHoverBg(null)" 
+             (click)="toggleWatched(item, $event)">
 
           <div class="poster-wrapper">
             <img [src]="item.poster_url" class="poster-img" [alt]="item.tytul">
