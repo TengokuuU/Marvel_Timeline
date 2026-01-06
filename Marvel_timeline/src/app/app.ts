@@ -17,7 +17,7 @@ export class App implements OnInit {
   @ViewChild('timelineWrapper') timelineWrapper!: ElementRef;
 
   constructor(private dataService: DataService) {}
-
+  //Ładowanie danych
   ngOnInit() {
     this.dataService.getTimeline().subscribe({
       next: (data) => {
@@ -28,7 +28,7 @@ export class App implements OnInit {
       error: (err) => console.error('Błąd ładowania danych:', err)
     });
   }
-
+  //horizontal scroll
   @HostListener('wheel', ['$event'])
   onWheel(event: WheelEvent) {
     if (this.timelineWrapper) {
@@ -36,13 +36,13 @@ export class App implements OnInit {
       event.preventDefault();
     }
   }
-
+  //Zarządzanie statusem obejrzanego
   toggleWatched(item: any, event: Event) {
     event.stopPropagation();
     item.watched = !item.watched;
     this.saveToLocalStorage();
   }
-
+  //zapis do localstorage
   saveToLocalStorage() {
     const watchedIds = this.mcuItems
       .filter(item => item.watched)
@@ -50,7 +50,7 @@ export class App implements OnInit {
     
     localStorage.setItem('mcu_watched_list', JSON.stringify(watchedIds));
   }
-
+  //odczyt z localstorage
   loadWatchedStatus() {
     const saved = localStorage.getItem('mcu_watched_list');
     if (saved) {
@@ -63,6 +63,8 @@ export class App implements OnInit {
     }
   }
 
+
+  //Zarządzanie tłem na hover
   defaultBg = 'assets/misc/background_main.jpg'; 
   private currentLayer: 1 | 2 = 1;
 

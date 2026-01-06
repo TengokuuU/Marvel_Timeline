@@ -69,7 +69,6 @@ body {
   position: relative;
 }
 
-/* Warstwa tła 1 (dolna) - PRZENIESIONE NA TIMELINE-TRACK */
 .timeline-track::before {
   content: '';
   position: fixed;
@@ -86,7 +85,6 @@ body {
   pointer-events: none;
 }
 
-/* Warstwa tła 2 (górna) - PRZENIESIONE NA TIMELINE-TRACK */
 .timeline-track::after {
   content: '';
   position: fixed;
@@ -103,7 +101,6 @@ body {
   pointer-events: none;
 }
 
-/* Animacja przełączania warstw */
 .timeline-track.fade-to-layer-2::before {
   opacity: 0;
 }
@@ -112,7 +109,6 @@ body {
   opacity: 1;
 }
 
-/* OŚ CZASU */
 .timeline-axis {
   position: absolute;
   top: 50%;
@@ -161,7 +157,6 @@ body {
   box-shadow: 0 0 10px var(--marvel-red);
 }
 
-/* KOTWICA I KARTA */
 .card-anchor {
   position: absolute;
   bottom: 50%;
@@ -192,7 +187,6 @@ body {
   box-shadow: 0 15px 35px rgba(0,0,0,0.8);
 }
 
-/* PLAKAT */
 .poster-wrapper {
   width: 220px;
   height: 330px;
@@ -208,7 +202,6 @@ body {
   display: block;
 }
 
-/* DETALE */
 .details-box {
   width: 320px;
   padding: 0;
@@ -236,7 +229,6 @@ body {
   margin: 0 0 15px 0;
 }
 
-/* INTERAKCJA HOVER */
 .mcu-card:hover {
   width: 540px;
   transform: scale(1.05) translateY(-10px);
@@ -270,7 +262,6 @@ body {
   background: linear-gradient(to top, var(--marvel-red), transparent);
 }
 
-/* NAKŁADKA OBEJRZANE */
 .watched-overlay {
   position: absolute;
   inset: 0;
@@ -285,7 +276,6 @@ body {
   pointer-events: none;
 }
 
-/* DISNEY+ LOGO */
 .dplus-link {
   display: inline-block;
 }
