@@ -1,3 +1,23 @@
+<div class="menu-btn" [class.open]="isMenuOpen" (click)="toggleMenu()">
+  <div class="menu-btn-burger"></div>
+</div>
+
+<div class="side-menu" [class.active]="isMenuOpen">
+  <nav>
+    <h2>Multiversum</h2>
+    <ul>
+      <li class="marvel-link" (click)="switchUniverse('mcu_movies_data')">
+        <span class="dot"></span> MARVEL
+      </li>
+      <li class="sw-link" (click)="switchUniverse('starwars_movies_data')">
+        <span class="dot"></span> Star Wars
+      </li>
+      <li class="fnaf-link" (click)="switchUniverse('fnaf_games_data')">
+        <span class="dot"></span> Five Nights at Freddy's
+      </li>
+    </ul>
+  </nav>
+</div>
 <div class="timeline-wrapper" #timelineWrapper>
   <div class="timeline-track" #timeline>
     <div class="timeline-axis">
@@ -13,11 +33,10 @@
       <div class="card-anchor">
         <div class="mcu-card" 
              (mouseenter)="setHoverBg(item)" 
-             (mouseleave)="setHoverBg(null)" 
-             (click)="toggleWatched(item, $event)">
+             (mouseleave)="setHoverBg(null)">
 
           <div class="poster-wrapper">
-            <img [src]="item.poster_url" class="poster-img" [alt]="item.tytul">
+            <img [src]="item.poster_url" class="poster-img" [alt]="item.tytul" (click)="toggleWatched(item, $event)">
             <div class="watched-overlay" *ngIf="item.watched">
               <span class="check-icon">✔</span>
             </div>

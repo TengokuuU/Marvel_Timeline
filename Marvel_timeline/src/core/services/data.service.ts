@@ -3,13 +3,20 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { MCUItem } from '../../app/models/mcu-item.model';
 
-@Injectable({ providedIn: 'root' })
+@Injectable({
+  providedIn: 'root'
+})
 export class DataService {
-  private dataUrl = 'assets/data/mcu_movies_data.json';
 
   constructor(private http: HttpClient) {}
 
+  // Pobiera domyślny timeline (Marvel)
   getTimeline(): Observable<MCUItem[]> {
-    return this.http.get<MCUItem[]>(this.dataUrl);
+    return this.http.get<MCUItem[]>('assets/data/mcu-data.json');
+  }
+
+  // Pobiera dowolne uniwersum na żądanie
+  getUniverseTimeline(universe: string): Observable<MCUItem[]> {
+    return this.http.get<MCUItem[]>(`assets/data/${universe}.json`);
   }
 }
