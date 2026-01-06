@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+.theme-marvel {
+  --main-color: #ff0000;
+  --glow-color: rgba(255, 0, 0, 0.6);
+}
+
+/* Motyw Star Wars (Żółty) */
+.theme-starwars {
+  --main-color: #ffe81f;
+  --glow-color: rgba(255, 232, 31, 0.5);
+}
+
+/* Motyw FNAF (Fioletowy) */
+.theme-fnaf {
+  --main-color: #8a2be2;
+  --glow-color: rgba(138, 43, 226, 0.6);
+}
+
+/* Użycie w elementach */
+.card-title {
+  color: var(--main-color);
+}
+
+.card-container {
+  box-shadow: 0 0 20px var(--glow-color);
+  border: 1px solid var(--main-color);
+}
+
 *
 {
   font-family: "work sans", sans-serif;
@@ -161,7 +188,6 @@ body {
   box-shadow: 0 0 10px var(--marvel-red);
 }
 
-/* KOTWICA I KARTA */
 .card-anchor {
   position: absolute;
   bottom: 50%;
@@ -192,7 +218,6 @@ body {
   box-shadow: 0 15px 35px rgba(0,0,0,0.8);
 }
 
-/* PLAKAT */
 .poster-wrapper {
   width: 220px;
   height: 330px;
@@ -208,7 +233,6 @@ body {
   display: block;
 }
 
-/* DETALE */
 .details-box {
   width: 320px;
   padding: 0;
@@ -236,7 +260,6 @@ body {
   margin: 0 0 15px 0;
 }
 
-/* INTERAKCJA HOVER */
 .mcu-card:hover {
   width: 540px;
   transform: scale(1.05) translateY(-10px);
@@ -270,7 +293,6 @@ body {
   background: linear-gradient(to top, var(--marvel-red), transparent);
 }
 
-/* NAKŁADKA OBEJRZANE */
 .watched-overlay {
   position: absolute;
   inset: 0;
@@ -285,7 +307,6 @@ body {
   pointer-events: none;
 }
 
-/* DISNEY+ LOGO */
 .dplus-link {
   display: inline-block;
 }
@@ -327,3 +348,89 @@ body {
   color: rgb(241,241,241);
   font-size: 14px;
 }
+
+/*MENU*/
+/* Przycisk Burgera */
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn-burger {
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.menu-btn-burger::before, .menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.menu-btn-burger::before { transform: translateY(-10px); }
+.menu-btn-burger::after { transform: translateY(10px); }
+
+/* Animacja ikony do X */
+.menu-btn.open .menu-btn-burger { transform: translateX(-50px); background: transparent; }
+.menu-btn.open .menu-btn-burger::before { transform: rotate(45deg) translate(35px, -35px); }
+.menu-btn.open .menu-btn-burger::after { transform: rotate(-45deg) translate(35px, 35px); }
+
+/* Panel Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 999;
+  transition: left 0.5s cubic-bezier(0.77,0,0.175,1);
+  padding: 100px 40px;
+}
+
+.side-menu.active {
+  left: 0;
+}
+.side-menu h2 {
+  color: white;
+  font-family: 'Marvel', sans-serif; /* Albo inna stylowa czcionka */
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+
+.side-menu ul { list-style: none; padding: 0; }
+
+.side-menu li {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  margin: 25px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu li:hover {
+  color: white;
+  transform: translateX(15px);
+}
+/* Kolorowe kropki przy uniwersach */
+.dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 15px; background: white; }
+.marvel-link:hover .dot { background: #e62429; box-shadow: 0 0 10px #e62429; }
+.sw-link:hover .dot { background: #ffe81f; box-shadow: 0 0 10px #ffe81f; }
+.fnaf-link:hover .dot { background: #8e44ad; box-shadow: 0 0 10px #8e44ad; }
